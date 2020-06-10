@@ -1,0 +1,11 @@
+// reinforce the concept that in a loop (for or while)
+// we can put calls to functions in the execution context
+//let's do an example:
+
+function a(){ }
+function b(){ }
+function keepGoing(){return true; }
+
+for ( a() ;  keepGoing() ; b() ){
+    console.log("yeahh! feeling happy!!");
+}
